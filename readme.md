@@ -40,7 +40,7 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
    - 👤 **Tên người dùng**
    - 🔑 **Mật khẩu**
    - 📶 **Thông tin WiFi**
-![Configuration Settings](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture10.png)
+   ![Configuration Settings](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture10.png)
 
 3. 🔐 Bật dịch vụ **SSH**:
    - 🔧 Chọn **"Services"**
@@ -111,7 +111,6 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
    ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture17.png)
 4. 🔗 Chọn **VNC**
    ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture18.png)
-
 5. ✅ Chọn **"Yes"**
    ![VNC Setup](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture19.png)
 
