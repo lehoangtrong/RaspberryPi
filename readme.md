@@ -112,6 +112,7 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
    ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture17.png)
 
 4. 🔗 Chọn **VNC**
+
    ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture18.png)
 
 5. ✅ Chọn **"Yes"** để bật VNC
