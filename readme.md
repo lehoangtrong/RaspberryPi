@@ -128,4 +128,13 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
 
 ---
 
+## Lỗi Thường Gặp và Cách Khắc Phục
+Không thể kết nối VNC với Raspberry Pi:
+
+```sh
+sudo rm /root/.vnc/private.key
+sudo vncserver-x11 -generatekeys force
+sudo systemctl restart vncserver-x11-serviced
+```
+
 🎉 Chúc bạn cài đặt Raspberry Pi thành công! 🚀
