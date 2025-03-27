@@ -12,47 +12,47 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
 
 - 📀 Tải [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
-![Raspberry Pi Banner](images/picture1.png)
-![Raspberry Pi Kit](images/picture2.png)
+![Raspberry Pi Banner](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture1.png)
+![Raspberry Pi Kit](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture2.png)
 
 - 🔍 Tải [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
 
-![Raspberry Pi Imager Download](images/picture3.png)
-![RealVNC Viewer Download](images/picture4.png)
+![Raspberry Pi Imager Download](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture3.png)
+![RealVNC Viewer Download](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture4.png)
 
 ## 💿 Bước 2: Cài Đặt Hệ Điều Hành
 
 1. 🖱️ Mở Raspberry Pi Imager
-![Pi Imager Interface](images/picture5.png)
+![Pi Imager Interface](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture5.png)
 2. 📱 Chọn thiết bị: **Raspberry Pi 4**
-![Selecting Device](images/picture6.png)
+![Selecting Device](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture6.png)
 3. 🔧 Chọn hệ điều hành phù hợp
-![Selecting OS](images/picture7.png)
+![Selecting OS](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture7.png)
 4. 💾 Chọn thẻ nhớ để cài đặt
-![Selecting Storage](images/picture8.png)
+![Selecting Storage](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture8.png)
 
 ## ⚙️ Bước 3: Cấu Hình Cài Đặt
 
 1. 🖱️ Nhấn **"Edit Settings"**
-![Edit Settings Button](images/picture9.png)
+![Edit Settings Button](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture9.png)
 2. 📝 Điền thông tin:
    - 🏠 **Hostname** (tên máy)
    - 👤 **Tên người dùng**
    - 🔑 **Mật khẩu**
    - 📶 **Thông tin WiFi**
-![Configuration Settings](images/picture10.png)
+![Configuration Settings](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture10.png)
 
 3. 🔐 Bật dịch vụ **SSH**:
    - 🔧 Chọn **"Services"**
    - ✅ Tích chọn **"Enable SSH"**
    - 🔒 Chọn **"Use password authentication"**
-![SSH Configuration](images/picture11.png)
+![SSH Configuration](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture11.png)
 4. 💾 Lưu cài đặt
    - 💾 Nhấn **"Save"**
    - ✍️ Nhấn **"Write"** để cài đặt hệ điều hành
    - ✅ Nhấn **"Yes"** để xác nhận
    - ⏳ Chờ quá trình cài đặt hoàn tất
-![Saving Settings](images/picture12.png)
+![Saving Settings](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture12.png)
 
 ## 📶 Bước 4: Phát WiFi Từ Máy Tính
 
@@ -64,7 +64,7 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
 5. ✅ Bật **"Share my Internet connection with other devices"**
 6. 🏷️ Đặt **tên mạng** và **mật khẩu**
 
-![Windows Hotspot Setup](images/picture13.png)
+![Windows Hotspot Setup](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture13.png)
 
 ### 🍎 macOS:
 1. ⚙️ Mở **"System Preferences"**
@@ -83,9 +83,9 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
      ```sh
      ping -4 raspberrypi
      ```
-     ![macOS Hotspot Setup](images/picture14.png)
+     ![macOS Hotspot Setup](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture14.png)
    - 🔢 Hoặc sử dụng địa chỉ IP hiển thị khi phát WiFi
-   ![Windows Hotspot Setup](images/picture13.png) 
+   ![Windows Hotspot Setup](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture13.png) 
 
 ## 🔐 Bước 6: Kết Nối Từ Xa (SSH)
 
@@ -94,7 +94,7 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
    ```sh
    ssh username@ip_address
    ```
-   ![SSH Command](images/picture15.png)
+   ![SSH Command](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture15.png)
 3. 🔑 Nhập mật khẩu
    - ℹ️ Lưu ý: Gõ mật khẩu trên Linux không hiển thị ký tự khi nhập mật khẩu (không có dấu sao hoặc chấm)
    - ↩️ Sau khi nhập mật khẩu, nhấn **Enter** để xác nhận
@@ -106,22 +106,22 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
    ```sh
    sudo raspi-config
    ```
-   ![Raspi Config](images/picture16.png)
+   ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture16.png)
 3. 🔧 Chọn **"Interface Options"**
-   ![Raspi Config](images/picture17.png)
+   ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture17.png)
 4. 🔗 Chọn **VNC**
-   ![Raspi Config](images/picture18.png)
+   ![Raspi Config](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture18.png)
 
 5. ✅ Chọn **"Yes"**
-   ![VNC Setup](images/picture19.png)
+   ![VNC Setup](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture19.png)
 
 ## 🖱️ Bước 8: Truy Cập Raspberry Pi Từ Xa
 
 1. 🔍 Mở **RealVNC Viewer**
 2. 🔢 Nhập **địa chỉ IP** của Raspberry Pi
-   ![RealVNC Interface](images/picture20.png)
+   ![RealVNC Interface](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture20.png)
 3. 🔑 Nhập **tên người dùng** và **mật khẩu**
-   ![Raspberry Pi Desktop](images/picture21.png)
+   ![Raspberry Pi Desktop](https://raw.githubusercontent.com/lehoangtrong/RaspberryPi/refs/heads/main/images/Picture21.png)
 
 ---
 
