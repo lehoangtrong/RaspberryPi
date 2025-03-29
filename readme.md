@@ -1,33 +1,36 @@
 # Phần 1: Hướng dẫn lắp đặt xe dò line sử dụng 2 cảm biến IR
+
 ## 🤖 Xe dò line sử dụng 2 cảm biến IR với Raspberry Pi Pico
 
 ### 📋 Danh sách linh kiện cần thiết
-- Raspberry Pi Pico (với MicroPython)
-- Module L9110 điều khiển động cơ
-- 2 cảm biến IR dò line
-- 2 động cơ DC
-- Pin hoặc nguồn cấp điện
-- Khung xe robot
+
+-   Raspberry Pi Pico (với MicroPython)
+-   Module L9110 điều khiển động cơ
+-   2 cảm biến IR dò line
+-   2 động cơ DC
+-   Pin hoặc nguồn cấp điện
+-   Khung xe robot
 
 ### 🔌 Sơ đồ kết nối
-- **Cảm biến IR:**
-   - IR trái → GPIO 0
-   - IR phải → GPIO 1
-   
-- **Module điều khiển động cơ L9110:**
-   - GND → GND
-   - VCC → 5V
-   - A-IA → GPIO 2 (PWM)
-   - A-IB → GPIO 3 (PWM)
-   - B-IA → GPIO 4 (PWM)
-   - B-IB → GPIO 5 (PWM)
 
-- **Động cơ DC:**
-   - Động cơ trái → A-IA, A-IB
-   - Động cơ phải → B-IA, B-IB
+-   **Cảm biến IR:**
+    -   IR trái → GPIO 0
+    -   IR phải → GPIO 1
+-   **Module điều khiển động cơ L9110:**
 
+    -   GND → GND
+    -   VCC → 5V
+    -   A-IA → GPIO 2 (PWM)
+    -   A-IB → GPIO 3 (PWM)
+    -   B-IA → GPIO 4 (PWM)
+    -   B-IB → GPIO 5 (PWM)
+
+-   **Động cơ DC:**
+    -   Động cơ trái → A-IA, A-IB
+    -   Động cơ phải → B-IA, B-IB
 
 ### 💻 Giải thích mã nguồn
+
 Mã nguồn MicroPython được chia thành những phần chính:
 
 1. **Khởi tạo các chân PWM** cho điều khiển động cơ
@@ -36,28 +39,32 @@ Mã nguồn MicroPython được chia thành những phần chính:
 4. **Vòng lặp chính** để đọc giá trị cảm biến và điều khiển xe
 
 ### 🧠 Nguyên lý hoạt động
-- Khi cảm biến IR **phát hiện đường line đen**, giá trị trả về là **1**
-- Khi cảm biến IR **phát hiện bề mặt trắng**, giá trị trả về là **0**
-- Xe sẽ di chuyển theo những quy tắc sau:
-   - **Cả hai cảm biến trên line (1,1)**: Đi thẳng
-   - **Cảm biến trái trên line (1,0)**: Rẽ trái
-   - **Cảm biến phải trên line (0,1)**: Rẽ phải
-   - **Không cảm biến nào trên line (0,0)**: Dừng lại
+
+-   Khi cảm biến IR **phát hiện đường line đen**, giá trị trả về là **1**
+-   Khi cảm biến IR **phát hiện bề mặt trắng**, giá trị trả về là **0**
+-   Xe sẽ di chuyển theo những quy tắc sau:
+    -   **Cả hai cảm biến trên line (1,1)**: Đi thẳng
+    -   **Cảm biến trái trên line (1,0)**: Rẽ trái
+    -   **Cảm biến phải trên line (0,1)**: Rẽ phải
+    -   **Không cảm biến nào trên line (0,0)**: Dừng lại
 
 ### 🔧 Tinh chỉnh và tối ưu
-- Điều chỉnh giá trị `speed` trong các hàm chuyển động để thay đổi tốc độ xe
-- Giảm giá trị `utime.sleep()` để phản ứng nhanh hơn
-- Đảo giá trị logic nếu cảm biến của bạn hoạt động ngược lại (0 khi gặp đường đen)
+
+-   Điều chỉnh giá trị `speed` trong các hàm chuyển động để thay đổi tốc độ xe
+-   Giảm giá trị `utime.sleep()` để phản ứng nhanh hơn
+-   Đảo giá trị logic nếu cảm biến của bạn hoạt động ngược lại (0 khi gặp đường đen)
 
 ### 🚨 Xử lý sự cố
-- Kiểm tra pin nếu động cơ không hoạt động hoặc yếu
-- Đảm bảo cảm biến IR được đặt ở độ cao phù hợp (2-5mm) từ mặt sàn
-- Điều chỉnh độ nhạy của cảm biến IR nếu có
-- Kiểm tra kết nối dây và chân GPIO nếu xe không hoạt động như mong đợi
+
+-   Kiểm tra pin nếu động cơ không hoạt động hoặc yếu
+-   Đảm bảo cảm biến IR được đặt ở độ cao phù hợp (2-5mm) từ mặt sàn
+-   Điều chỉnh độ nhạy của cảm biến IR nếu có
+-   Kiểm tra kết nối dây và chân GPIO nếu xe không hoạt động như mong đợi
 
 ---
 
 # Phần 2: Hướng dẫn cài đặt Raspberry Pi 4 với VNC và SSH
+
 ## 🚀 Hướng Dẫn Cài Đặt Raspberry Pi 4 với VNC và SSH
 
 ## 🛠️ Chuẩn Bị
@@ -194,7 +201,32 @@ Trước khi bắt đầu, bạn cần chuẩn bị:
 
 ---
 
-## Lỗi Thường Gặp và Cách Khắc Phục
+## 🌐 Bước 9: Cấu Hình WiFi Qua File
+
+Bạn cũng có thể cấu hình WiFi trực tiếp qua file `wpa_supplicant.conf`:
+
+1. 📁 Tạo hoặc mở file `wpa_supplicant.conf`
+2. 📝 Thêm nội dung sau:
+
+```sh
+country=VN
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+   ssid="Tên mạng WiFi"
+   psk="Mật khẩu WiFi"
+   key_mgmt=WPA-PSK
+}
+```
+
+3. 💾 Lưu file và khởi động lại:
+
+```sh
+sudo reboot
+```
+
+## 🛠️ Lỗi Thường Gặp và Cách Khắc Phục
 
 Không thể kết nối VNC với Raspberry Pi:
 
@@ -206,4 +238,7 @@ sudo systemctl restart vncserver-x11-serviced
 
 🎉 Chúc bạn cài đặt Raspberry Pi thành công! 🚀
 Nếu có bất kỳ câu hỏi nào, hãy để lại dưới đây nhé! 😊
+
+```
+
 ```
