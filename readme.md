@@ -238,7 +238,3 @@ sudo systemctl restart vncserver-x11-serviced
 
 🎉 Chúc bạn cài đặt Raspberry Pi thành công! 🚀
 Nếu có bất kỳ câu hỏi nào, hãy để lại dưới đây nhé! 😊
-
-```
-
-```
