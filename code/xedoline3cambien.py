@@ -74,18 +74,17 @@ while True:
     if center == 1 and left == 0 and right == 0:
         move_forward(45000)  # Đi thẳng nhanh
     elif center == 1 and left == 0 and right == 1:
-        turn_right_hard(45000)  # Rẽ phải nhẹ
+        turn_right_hard(35000)  # Rẽ phải
     elif center == 0 and left == 0 and right == 1:
         turn_right_hard(45000)  # Rẽ phải mạnh
     elif center == 1 and left == 1 and right == 0:
-        turn_left_hard(45000)  # Rẽ trái nhẹ
+        turn_left_hard(35000)  # Rẽ trái nhẹ
     elif center == 0 and left == 1 and right == 0:
         turn_left_hard(45000)  # Rẽ trái mạnh
     elif center == 0 and left == 0 and right == 0:
-#        move_forward(45000)  #di thang
-#         utime.sleep(0.5)
-         stop()  # Dừng khi không thấy line
+        move_forward(30000)  #di thang
     else:
         move_forward(45000)  # Mặc định đi thẳng
 
     utime.sleep(0.05)  # Giảm delay để phản hồi nhanh hơn
+
