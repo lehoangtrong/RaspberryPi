@@ -2,10 +2,10 @@ from machine import Pin, PWM
 import utime
 
 # Khởi tạo PWM cho module L9110
-A_IA = PWM(Pin(5))
-A_IB = PWM(Pin(4)) 
-B_IA = PWM(Pin(3))
-B_IB = PWM(Pin(2))
+A_IA = PWM(Pin(3))
+A_IB = PWM(Pin(2))
+B_IA = PWM(Pin(5))
+B_IB = PWM(Pin(4))
 
 # Cấu hình tần số PWM
 A_IA.freq(1000)
@@ -14,8 +14,9 @@ B_IA.freq(1000)
 B_IB.freq(1000)
 
 # Khởi tạo GPIO cho cảm biến IR
-IR_LEFT = Pin(0, Pin.IN)
-IR_RIGHT = Pin(1, Pin.IN)
+IR_LEFT = Pin(13, Pin.IN)
+IR_CENTER = Pin(14, Pin.IN)
+IR_RIGHT = Pin(15, Pin.IN)
 
 # Hàm điều khiển động cơ
 
